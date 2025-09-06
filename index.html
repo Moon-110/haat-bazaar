@@ -61,13 +61,14 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
                             </div>
-                            <h2 class="card-title mb-3">K. Accessories</h2>
-                            <p><span>150.00</span> TK</p>
-                            <div class="">
-                            <button class="btn bg-pink-400 block text-white">Add to Cart</button>
-                            </div>
+                            <h2 id="card1-title" class="card-title mb-3">K. Accessories</h2>
+                            <p ><span id="card1-price">150.00</span> TK</p>
+                            
                             
                         </div>
+                        <div class="">
+                            <button id="card1-kitchen-btn" class="btn bg-pink-400 block text-white mb-2 w-full">Add to Cart</button>
+                            </div>
                         </div>
 
                         <!-- kitchen cards 2-->
@@ -86,11 +87,12 @@
                             </div>
                             <h2 class="card-title mb-3">K. Accessories</h2>
                             <p><span>250.00</span> TK</p>
-                            <div class="">
-                            <button class="btn bg-pink-400 block text-white">Add to Cart</button>
-                            </div>
+                            
                             
                         </div>
+                        <div class="">
+                            <button class="btn bg-pink-400 block text-white mb-2 w-full">Add to Cart</button>
+                            </div>
                         </div>
 
                         <!-- kitchen card 3 -->
@@ -109,19 +111,21 @@
                             </div>
                             <h2 class="card-title mb-3">Home Cooker</h2>
                             <p><span>600.00</span> TK</p>
-                            <div class="">
-                            <button class="btn bg-pink-400 block text-white">Add to Cart</button>
-                            </div>
+                            
                             
                         </div>
+                        <div class="">
+                            <button class="btn bg-pink-400 block text-white mt-5 w-full mb-2">Add to Cart</button>
+                            </div>
                         </div>
+                        
 
                     </div>
                 </div>
             </section>
 
             <!-- sports card section -->
-             <section id="products-box" class="col-span-9">
+             <!-- <section id="products-box" class="col-span-9">
                 <div class="kitchen">
                     <h1 class="text-3xl font-bold">Kitchenware</h1>
                     <div class="kitchen-items grid grid-cols-3 gap-5">
@@ -196,11 +200,11 @@
 
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
             <!-- furniture card section -->
-            <section id="products-box" class="col-span-9">
+            <!-- <section id="products-box" class="col-span-9">
                 <div class="kitchen">
                     <h1 class="text-3xl font-bold">Kitchenware</h1>
                     <div class="kitchen-items grid grid-cols-3 gap-5">
@@ -275,11 +279,11 @@
 
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
 
-            <aside id="card-box " class="bg-yellow-700 col-span-3 h-full">
+            <aside id="card-box " class="col-span-3 h-full">
                 <div class="bg-white p-4 rounded">
                     <h2 class="font-bold mb-3">Have coupon?</h2>
                     <div class="join">
@@ -290,16 +294,21 @@
 
                 <div class="cart-box mt-8 p-5 bg-white">
                     <h2 class="font-bold">Cart</h2>
-                    <div class="" id="card-container">
-                        <div>
+                    <div class="" id="cart-container">
+                        
+                    </div>
+                    <div>
                             <h2>Total Price : <Span id="total-price">0</Span> TK</h2>
                             <h2>Total Quantity : <Span id="total-price">0</Span> items</h2>
                             <button class="btn join-item rounded-r-xl bg-pink-400 text-white btn-block">Make Purchase</button>
                         </div>
-                    </div>
                 </div>
             </aside>
         </section>
     </main>
+
+
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
