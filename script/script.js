@@ -37,7 +37,7 @@ for ( let cartButton of cartBtns){
 
          const newCart = document.createElement('div');
          newCart.innerHTML=`
-         <div class=" bg-gray-200 rounded-xl flex justify-between items-center p-3">
+         <div class=" bg-gray-200 rounded-xl flex justify-between items-center p-3 mb-3">
         <img class="w-12" src="${productImg}" alt="">
             <div>
                 <h2 class="font-bold">${productTitle}</h2>
@@ -48,10 +48,24 @@ for ( let cartButton of cartBtns){
      `;
 
      cartContainer.append(newCart);
+
+     const quantity = document.getElementById('total-quantity').innerText;
+
+const currentQuantity = Number(quantity) + 1 ;
+getElement('total-quantity').innerText = currentQuantity;
     
 })
 
+
 }
+
+document.getElementById('btn-clear').addEventListener('click', function (){
+    const cartContainer=getElement('cart-container');
+    cartContainer.innerHTML='';
+    getElement('total-quantity').innerText = 0;
+     getElement('total-price').innerText=0;;
+
+})
 
 
 
