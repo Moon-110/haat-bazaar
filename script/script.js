@@ -4,6 +4,8 @@
 //querySelector--> element(css)
 //querySelectorAll--> array of element(css)
 
+// const { createElement } = require("react");
+
 function getElement(id){
     const element = document.getElementById(id);
     return element;
@@ -29,6 +31,23 @@ for ( let cartButton of cartBtns){
 
          const currentTotal = Number(productPrice)+Number(totalPrice);
          getElement('total-price').innerText=currentTotal;
+
+
+         const cartContainer= getElement('cart-container');
+
+         const newCart = document.createElement('div');
+         newCart.innerHTML=`
+         <div class=" bg-gray-200 rounded-xl flex justify-between items-center p-3">
+        <img class="w-12" src="${productImg}" alt="">
+            <div>
+                <h2 class="font-bold">${productTitle}</h2>
+                <h2 class="font-bold">${productPrice} TK</h2>
+                        
+            </div>
+        </div>
+     `;
+
+     cartContainer.append(newCart);
     
 })
 
