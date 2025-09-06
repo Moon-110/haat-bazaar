@@ -25,7 +25,7 @@
 
     <main>
         <!-- hero section -->
-        <section class="max-w-full min-h-[300px] mx-auto bg-gradient-to-t from-[#e9cbcb] to-[#ffffff]">
+        <section class="max-w-full min-h-[300px] mx-auto mb-25 bg-gradient-to-t from-[#e9cbcb] to-[#ffffff]">
             <div class="w-1/2 h-full mx-auto relative">
                     <h1 class="text-center mt-10 text-[20px] font-bold">Purchase TK 200 or above & get <br> <span class="text-[#E527B2]">20% off</span></h1>                
                 <div>
@@ -34,9 +34,93 @@
                         <button class="btn w-[100px] h-[30px] bg-[#E527B2] text-white">Secondary</button>
                     </div>
                 </div>
-                <img class="absolute" src="./assets/hero-bg.png" alt="">
+                <img class="absolute w-[400px] left-[130px]" src="./assets/hero-bg.png" alt="">
             </div>
 
+        </section>
+
+        <!-- products section -->
+
+        <section id="products-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
+            <section id="products-box" class="bg-yellow-200 col-span-9">
+                <div class="kitchen">
+                    <h1 class="text-3xl font-bold">Kitchenware</h1>
+                    <div class="kitchen-items grid grid-cols-3 gap-5">
+                        <!-- kitchen card 1 -->
+                        <div class="card bg-base-100 shadow-sm">
+                        <figure class=" m-4 bg-gray-200">
+                            <img
+                            src="./assets/kitchen-1.png" alt="Shoes" class="rounded-xl py-5" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star" checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                            </div>
+                            <h2 class="card-title mb-3">K. Accessories</h2>
+                            <p><span>150.00</span> TK</p>
+                            <div class="">
+                            <button class="btn bg-pink-400 block text-white">Add to Cart</button>
+                            </div>
+                            
+                        </div>
+                        </div>
+
+                        <!-- kitchen cards 2-->
+                        <div class="card bg-base-100 shadow-sm">
+                        <figure class=" m-4 bg-gray-200">
+                            <img
+                            src="./assets/kitchen-2.png" alt="Shoes" class="rounded-xl py-5" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star" checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                            </div>
+                            <h2 class="card-title mb-3">K. Accessories</h2>
+                            <p><span>250.00</span> TK</p>
+                            <div class="">
+                            <button class="btn bg-pink-400 block text-white">Add to Cart</button>
+                            </div>
+                            
+                        </div>
+                        </div>
+
+                        <!-- kitchen card 3 -->
+                        <div class="card bg-base-100 shadow-sm">
+                        <figure class=" m-4 bg-gray-200">
+                            <img
+                            src="./assets/kitchen-3.png" alt="Shoes" class="rounded-xl py-5" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star" checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                            </div>
+                            <h2 class="card-title mb-3">Home Cooker</h2>
+                            <p><span>600.00</span> TK</p>
+                            <div class="">
+                            <button class="btn bg-pink-400 block text-white">Add to Cart</button>
+                            </div>
+                            
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <aside id="card-box " class="bg-yellow-700 col-span-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque commodi iste veniam doloremque error. Natus voluptates sequi maxime error similique, nam hic ducimus magnam neque ullam, ratione cum tenetur.</p>
+            </aside>
         </section>
     </main>
 </body>
